@@ -10,4 +10,4 @@ ENV PATH="${HIVE_HOME}/bin:${PATH}"
 ADD core-site.xml /usr/local/hadoop-2.7.3/etc/hadoop/
 ADD hive-site.xml /usr/local/apache-hive-$HIVE_VERSION-bin/conf
 
-CMD hiveserver2
+CMD hive --service metastore
